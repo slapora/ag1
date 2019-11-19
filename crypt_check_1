@@ -1,0 +1,7 @@
+---
+
+ - name: Run a command that uses bash to run blkid and check for luks partitions
+   shell: /sbin/blkid -t TYPE="crypto_LUKS"; echo "----------"
+   args:
+     executable: /bin/bash
+
